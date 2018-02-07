@@ -32,7 +32,3 @@ function isNan(){
 function preserveDecimal(n){
   return parseFloat(n)
 }
-
-  it('returns NaN as appropriate', function() {
-    expect(isNaN(preserveDecimal('sldkjflksjf'))).toEqual(true)
-  })
