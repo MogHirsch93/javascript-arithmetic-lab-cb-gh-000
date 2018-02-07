@@ -34,6 +34,10 @@ describe('preserveDecimal(n)', function() {
     expect(preserveDecimal('2.222')).toBe(2.222)
   })
 
+function preserveDecimal(n){
+  return parseFloat(n)
+}
+
   it('returns NaN as appropriate', function() {
     expect(isNaN(preserveDecimal('sldkjflksjf'))).toEqual(true)
   })
